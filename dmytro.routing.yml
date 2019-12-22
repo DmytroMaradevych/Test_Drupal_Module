@@ -1,0 +1,15 @@
+
+dmytro.default_controller_hello:
+  path: '/dmytro/hello/{name}'
+  defaults:
+    _controller: '\Drupal\dmytro\Controller\DefaultController::hello'
+    _title: '[]'
+  requirements:
+    _permission: 'access content'
+dmytro.dmytro_form:
+  path: '/testform'
+  defaults:
+    _form: '\Drupal\dmytro\Form\DmytroForm'
+    _title: 'DmytroForm'
+  requirements:
+    _access: 'TRUE'
